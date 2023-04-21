@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Go-Rest API RestAssured Regression Suite" thread-count="5" parallel="tests" verbose="4">
+    <listeners>
+<!--        <listener class-name="com.qa.api.gorest.listeners.ExtentReportListener"/>-->
+<!--        <listener class-name="com.qa.api.gorest.listeners.AllureListener"/>-->
+        <listener class-name="com.qa.api.gorest.listeners.TesultsListener"/>
+    </listeners>
+    <test name="Create Rest API tests">
+        <classes>
+            <class name="com.qa.api.gorest.tests.CreateUserTest">
+            </class>
+        </classes>
+    </test>
+    <test name="Delete Rest API tests">
+        <classes>
+            <class name="com.qa.api.gorest.tests.DeleteUserTest">
+            </class>
+        </classes>
+    </test>
+    <test name="Get Rest API tests">
+        <classes>
+            <class name="com.qa.api.gorest.tests.GetUserTest">
+            </class>
+        </classes>
+    </test>
+    <test name="Update Rest API tests">
+        <classes>
+            <class name="com.qa.api.gorest.tests.UpdateUserTest">
+            </class>
+        </classes>
+    </test>
+
+</suite>
